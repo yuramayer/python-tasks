@@ -8,7 +8,7 @@ def top_freq(nums, k):
     opfreq = {}
 
     for key, value in freq.items():
-        if key in opfreq:
+        if value in opfreq:
             opfreq[value] = opfreq[value] + [key]
         else:
             opfreq[value] = [key]
